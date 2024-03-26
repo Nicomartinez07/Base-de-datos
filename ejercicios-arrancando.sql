@@ -1,3 +1,5 @@
+/* Ejercicios SQL - arrancando */
+
 /* ejercicio 1 */
 
 SELECT name, Composer, Milliseconds FROM tracks
@@ -15,7 +17,7 @@ ORDER BY name
 
 /* ejercicio 4 */
 
-SELECT FirstName, LastName,Company FROM customers WHERE Company IS NOT NULL 
+SELECT FirstName, LastName, Company FROM customers WHERE Company IS NOT NULL 
 ORDER BY FirstName
 
 /* ejercicio 5 */
@@ -38,3 +40,4 @@ ORDER BY t.name ASC
 
 SELECT t.name, a.Title FROM tracks t JOIN albums a ON t.AlbumId = a.AlbumId
 ORDER BY a.Title DESC
+
